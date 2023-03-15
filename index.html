@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokédex | By Nathan.B</title>
+        <meta charset="UTF-8">
+        <meta author="Nathan Bellus">
+        <meta keywords="pokedex, pokédex, pokémon, nathan bellus">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <!-- Import style -->
+        <script src="https://kit.fontawesome.com/d0ae654fe9.js" crossorigin="anonymous"></script>
+        <!-- Import wrapper -->
+        <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+        <!-- Import Vue.js -->
+        <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+
+        <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="page-title">Pokédex | Made by Nathan.B</h1>
+        </header>
+
+        <div id="app">
+            <search-bar></search-bar>
+        </div>
+
+        <footer>
+            <p id="footer-p">© Copyright 2023, Pokédex made by <a id="footer-a" target="_blank" href="https://www.linkedin.com/in/nathan-bellus-25378821b/" id="linkedin_link">Nathan.B</a>, a 3rd year student in Computer Science and Management at Polytech Montpellier</p>
+        </footer>
+
+        <!-- Import App -->
+        <script src="./main.js"></script>
+
+        <!-- Import Components -->
+        <script src="./components/PokemonCard.js"></script>
+        <script src="./components/SearchBar.js"></script>
+
+        <!-- Mount App -->
+        <script>
+            const mountedApp = app.mount('#app')
+        </script>
+    </body>
+</html>
